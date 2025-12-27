@@ -1,5 +1,5 @@
 # Netlify configuration for terminal-cleaner
-# Deploys to tool.ryanwigley.com
+# Deploys to tools.ryanwigley.com
 
 [build]
   publish = "."
