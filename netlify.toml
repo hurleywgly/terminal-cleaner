@@ -1,16 +1,5 @@
 # Netlify configuration for terminal-cleaner
-# Deploys to tool.ryanwigley.com/terminal-cleaner
+# Deploys to tool.ryanwigley.com
 
 [build]
   publish = "."
-
-# Redirect rules to serve from /terminal-cleaner path
-[[redirects]]
-  from = "/terminal-cleaner"
-  to = "/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/terminal-cleaner/*"
-  to = "/:splat"
-  status = 200
