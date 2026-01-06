@@ -1,5 +1,29 @@
 # Netlify configuration for terminal-cleaner
-# Deploys to tools.ryanwigley.com
+# Deploys to tools.ryanwigley.com/terminal-text-cleaner
 
 [build]
   publish = "."
+
+# Serve this tool at /terminal-text-cleaner
+[[redirects]]
+  from = "/terminal-text-cleaner"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/terminal-text-cleaner/*"
+  to = "/:splat"
+  status = 200
+
+# Proxy to text-to-img tool
+[[redirects]]
+  from = "/text-to-img/*"
+  to = "https://text-to-graphic-converter.netlify.app/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/text-to-img"
+  to = "https://text-to-graphic-converter.netlify.app/"
+  status = 200
+  force = true

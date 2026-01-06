@@ -2,7 +2,7 @@
 
 A retro 90s-style terminal output cleaner that strips ANSI escape codes and reformats text.
 
-🔗 **Live Tool**: [tools.ryanwigley.com](https://tools.ryanwigley.com)
+🔗 **Live Tool**: [tools.ryanwigley.com/terminal-text-cleaner](https://tools.ryanwigley.com/terminal-text-cleaner)
 
 ## What It Does
 
